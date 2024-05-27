@@ -23,6 +23,10 @@
                     <div class="card-body">
                         <h5 class="card-title">{{ $article->nom }}</h5>
                         <p class="card-text">{{ $article->description }}</p>
+                        <p class="card-text">{{ $article->auteur }}</p>
+                        <p class="card-text">{{ $article->a_la_une}}</p>
+                        <p class="card-text">{{ $article->categorie}}</p>
+                        <p class="card-text">{{ $article->date_de_creation }}</p>
                         <a href="{{ url('/modifier-article', $article->id) }}" class="btn btn-primary">Modifier</a>
                         <a href="{{ url('/supprimer-article', $article->id) }}" class="btn btn-danger">Supprimer</a>
                     </div>

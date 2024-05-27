@@ -29,26 +29,26 @@
                   
             
 
-            <form action="/modifier/traitement" method="post" name="form-group">
+            <form action="{{URL('modifier-article/'.$article->id )}}" method="POST" name="form-group">
                 @csrf
 
-                <input type="text" name="id" style="display: none;" value="{{ $articles->id }}">
+                <input type="hidden" name="id" value="{{ $article->id }}">
 
                     <div class="form-group">
                       <label for="Nom" class="form-label">Nom</label>
-                      <input type="text" class="form-control" id="Nom" name="nom" value="{{ $articles->nom }}">
+                      <input type="text" class="form-control" id="Nom" name="nom" value="{{ $article->nom }}">
                     </div>       
 
                     <div class="form-group">
                         <label for="Description" class="form-label">Description</label>
-                        <input type="text" class="form-control" id="Description" name="description" value="{{ $articles->description }}">
-                      </div>    
+                        <input type="text" class="form-control" id="Description" name="description" value="{{ $article->description }}">
+                    </div>    
 
                     <br>
-                    <button type="submit" class="btn btn-primary">Modifier un etudiant</button>
+                    <button type="submit" class="btn btn-primary">Modifier un article</button>
                     <br>
                     <br>
-                    <a href="/article" class="btn btn-danger">Revenir à la liste des etudiants</a>
+                    <a href="/article" class="btn btn-danger">Revenir à la liste articles</a>
                   </form>
           </div>
           

@@ -15,7 +15,11 @@ return new class extends Migration
             $table->id();
             $table->string('nom');
             $table->text('description');
-            $table->timestamps();
+            $table->string('auteur');
+            $table->string('a_la_une');
+            $table->string('image')->nullable();
+            $table->string('categorie');
+            $table->timestamp('date_de_creation')->useCurrent();
         });
     }
 

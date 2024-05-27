@@ -9,9 +9,16 @@ class Article extends Model
 {
     use HasFactory;
 
+    public $timestamps = false;
     protected $fillable = [
         'nom',
-        'description',
+        'description', 
+        'auteur', 
+        'image',
+        'categorie',
+        'a_la_une',
+        'statut', 
+        'date_de_creation',
     ];
-
 }
+
