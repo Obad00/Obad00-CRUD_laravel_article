@@ -1,0 +1,14 @@
+/* custom.css */
+.article-container {
+    display: flex;
+    overflow-x: auto; /* Pour le défilement horizontal */
+    white-space: nowrap; /* Empêche les sauts de ligne */
+}
+
+.article-item {
+    flex: 0 0 auto; /* Ne s'étire pas, ne se rétrécit pas, taille automatique */
+    margin-right: 10px; /* Espacement entre les articles */
+}
+h1{
+    text-align: center;
+}

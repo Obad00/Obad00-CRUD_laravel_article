@@ -44,7 +44,10 @@
 
                 <div class="mb-3">
                     <label for="a_la_une" class="form-label">À la une</label>
-                    <input type="checkbox" class="form-check-input" id="a_la_une" name="a_la_une" value="1">
+                    <input type="radio" id="a_la_une" name="a_la_une" value="1">
+                    <label for="pas_a_la_une">Pas à la une</label>
+                    <input type="radio" id="pas_a_la_une" name="a_la_une" value="0">
+                   
                 </div>
 
                 <div class="mb-3">

@@ -33,7 +33,7 @@ class ArticleController extends Controller
         $article->a_la_une = $request->a_la_une; // Ajouté
         $article->auteur = $request->auteur;
         $article->categorie = $request->categorie;
-        $article->date_de_creation = Carbon::now();  // Use current timestamp
+        $article->date_de_creation = Carbon::now();  
         $article->save();
 
         return redirect('/ajouter')->with('status', 'L\'article a bien été ajouté avec succès.');
